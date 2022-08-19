@@ -1,0 +1,32 @@
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22rem;
+    height: 1.125rem;
+    margin-top: 2.0625rem;
+    border: 1px solid var(--turquoise-light);
+    border-radius: 8px;
+    padding: 1rem 0;
+}
+
+.itemTitle{
+    width: 22rem;
+    height: 100%;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding:  0.99rem;
+    background: var(--gray-700);
+  
+}
+.itemValue {
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: 100%;
+    padding:  1rem;
+    border-radius: 8px;
+    
+    background: var(--turquoise-light);
+
+}

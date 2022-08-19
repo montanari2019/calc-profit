@@ -1,0 +1,14 @@
+@media(min-width: 999px){
+    .container{
+        padding: 0 15%;
+    }
+}
+
+.welcomeText{
+    border-top: 1px solid var(--gray-600);
+    margin: 0 1.275rem;
+    text-align: center;
+    font-size: 1.253rem;
+    color: var(--gray-100);
+    padding: 5rem 0 1.85rem  0;
+} 

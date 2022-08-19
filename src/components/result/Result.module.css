@@ -1,0 +1,25 @@
+.container{
+    background: var(--gray-600);
+    color: var(--gray-100);
+    padding: 0 1.25rem;
+    margin-bottom: 2rem;
+    border-radius:20px;
+}
+
+.strong01 {
+    padding-top: 1.252rem;
+    text-align: left;
+}
+
+.sobras{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 22rem;
+    height: 1.125rem;
+    margin-top: 2.0625rem;
+    background: var(--gray-500);
+    border: 1px solid var(--turquoise-light);
+    border-radius: 8px;
+    padding: 1rem 0;
+}
