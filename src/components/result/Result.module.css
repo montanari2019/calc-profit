@@ -3,8 +3,7 @@
   color: var(--gray-100);
   padding: 0 1.25rem;
   margin-bottom: 2rem;
-  border-radius: 20px;
-  padding-bottom: 10rem;
+  border-radius: 25px;
 }
 
 .displayCards{
@@ -30,12 +29,30 @@
   border-radius: 8px;
   padding: 1rem 0;
 }
+.sobras:hover{
+  background: var(--purple);
+  border: 1px solid var(--purple-light);
+  transition: background-color 0.2s;
+}
 
 .sobras > p {
   letter-spacing: 2px;
 }
 
-/*  */
+.footer{
+  margin-top: 2.125rem;
+  margin-bottom: 4.4375rem;
+  padding-top: 2.125rem;
+  border-top: 1px solid var(--gray-700);
+  
+}
+.footer > p {
+  line-height: 2.5;
+}
+
+.footer > strong {
+  font-size: 1.25rem;
+}
 
 @media (min-width: 1025px) {
   .container {
@@ -56,5 +73,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .container {
+    
+    border-radius: 35px;
+    
+  }
+  .strong01{
+    padding-top: 2.625rem;
   }
 }

@@ -1,3 +1,4 @@
+import { Footer } from "../../components/footer/Footer";
 import { Header } from "../../components/header/Header";
 import { Result } from "../../components/result/Result";
 import { User } from "../../components/User/User";
@@ -18,9 +19,12 @@ export function Home() {
       </section>
 
       <section>
-        
         <Result />
       </section>
+
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }

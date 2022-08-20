@@ -1,0 +1,30 @@
+.icons{
+    
+    width: 278px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.container{
+    margin-top: 4.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > strong{
+    color: var(--gray-200);
+    font-size: 0.625rem;
+    margin: 2.625rem 0;
+    
+    
+}
+
+.aLogos{
+    color: var(--turquoise-light);
+}
+
+.aStrong{
+    text-decoration: none;
+    color: var(--gray-300);
+}

@@ -60,11 +60,21 @@ export function Result() {
               return(
               <ResultItem 
                 key={resultItem.id}
+                id={resultItem.id}
+                title={resultItem.title}
+                value={resultItem.value}
               
               />
               )
             })}
           
+          </section>
+
+          <section >
+            <div className={styleResult.footer}>
+              <p>Sobras a serem distribuídas para associados : </p>
+              <strong>65.321.854,15</strong>
+            </div>
           </section>
           
         </section>

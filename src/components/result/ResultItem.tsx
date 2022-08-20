@@ -1,15 +1,19 @@
+import { ResultItemProps } from "../../model/ResultItem";
 import styleResultItem from "./ResultItem.module.css";
 
-export function ResultItem() {
-  return (
+export function ResultItem({ id, title, value }: ResultItemProps) {
+  
+  const valueConverted = value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+  
+    return (
     <div>
       <div className={styleResultItem.item}>
         <div className={styleResultItem.itemTitle}>
-          <strong>Juros ao Capital Social 31/12/2021</strong>
+          <strong>{title}</strong>
         </div>
 
         <div className={styleResultItem.itemValue}>
-          <strong>9.286.942,86</strong>
+          <strong>{valueConverted}</strong>
         </div>
       </div>
     </div>
