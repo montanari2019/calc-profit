@@ -36,7 +36,7 @@
 
 }
 
-.item:hover{
+.item:hover {
     border: 1px solid var(--purple-light);    
     transition: boder-color 0.1s;
 }
