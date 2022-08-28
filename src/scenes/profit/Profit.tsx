@@ -1,7 +1,22 @@
-export function Profit(){
-    return(
-        <div>
-            Profit Page
-        </div>
-    )
+import styleProfit from "./Profit.module.css";
+
+import { Footer } from "../../components/footer/Footer";
+import { Header } from "../../components/header/Header";
+import { ProfitItemList } from "../../components/profitItem/ProfitItemList";
+
+export function Profit() {
+  return (
+    <div className={styleProfit.container}>
+      <Header />
+      <h3>Escolha sua simulação</h3>
+      <section>
+
+      <ProfitItemList />
+      </section>
+
+      
+
+      <Footer />
+    </div>
+  );
 }

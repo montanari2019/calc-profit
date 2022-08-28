@@ -1,6 +1,7 @@
 @media(min-width: 1025px){
     .container{
         padding: 0 15%;
+        transition: ease 1s;
     }
 }
 

@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.475rem;
+    padding-top: 1rem;
+}
+
+.container > label{
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+
+}
+
+.container > input{ 
+    height: 2.5rem;
+    padding-left: 1rem;
+    background: var(--gray-700);
+    color: var(--gray-100);
+    border: 1px solid var(--purple);
+    border-radius: 8px;
+}
+
+.container >input:focus{
+    outline: 1px solid var(--purple-light);
+}

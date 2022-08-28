@@ -1,0 +1,43 @@
+
+.cardOpen{
+    display: flex;
+    align-items: center;
+    background: var(--purple-light);
+    color: var(--gray-100);
+    border-radius: 5px;
+    height: 2.5rem;
+}
+
+.cardBody{
+    
+    margin: 0 1.625rem;
+    padding-bottom: 2rem;
+    border-radius: 8px;
+    border: solid 1px var(--purple);
+
+}
+.ajustButtonCard{
+    display: flex;
+    align-items: center;
+}
+
+.iconOpen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:2.5rem; 
+    width:2.5rem; 
+    border-radius: 4px;
+    background: var(--purple-light);
+    border: 0.5px solid var(--purple);
+    cursor: pointer;
+}
+.iconPlusOpen{
+    transform: rotate(45deg);
+    display: block;
+}
+
+
+.strong{
+    margin-left: 2.875rem;
+}

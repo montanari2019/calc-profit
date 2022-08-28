@@ -1,0 +1,10 @@
+.container {
+    padding: 2.93rem 0;
+    background: var(--gray-600);
+}
+
+@media(min-width: 1025px){
+    .container{
+        padding: 2.93rem 15%;
+    }
+}

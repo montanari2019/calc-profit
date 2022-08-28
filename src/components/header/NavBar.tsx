@@ -14,11 +14,11 @@ const linksNavigation = [
   },
   {
     nameLink: "Vizualiar Sobras",
-    url: "#",
+    url: "/viewProfit",
   },
   {
     nameLink: "Sobre",
-    url: "#",
+    url: "/about",
   },
 ];
 
@@ -33,12 +33,10 @@ export function NavBar() {
       setMenuCheck(true);
       console.log("Menu aberto");
     }
-    // console.log("clickando no menu");
   }
 
   return (
     <div>
-
         <section className={styleNavBar.navDesktop}>
             {linksNavigation.map((linksNav) =>{
                 return(
