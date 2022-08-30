@@ -41,3 +41,10 @@
 .strong{
     margin-left: 2.875rem;
 }
+
+.sectionDisplay{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    
+}

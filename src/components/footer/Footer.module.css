@@ -28,3 +28,7 @@
     text-decoration: none;
     color: var(--gray-300);
 }
+
+.aLogos:hover{
+    color: var(--turquoise-light);
+}
