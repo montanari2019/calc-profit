@@ -6,12 +6,22 @@
     color: var(--gray-100);
     border-radius: 5px;
     height: 2.5rem;
+    transition: background-color 0.5s ease;
+}
+.cardClose{
+    display: flex;
+    align-items: center;
+    background: var(--gray-600);
+    border: solid 1px var(--turquoise-light);
+    color: var(--gray-100);
+    border-radius: 5px;
+    height: 2.5rem;
+    transition: background-color 0.5s ease;
 }
 
 .cardBody{
-    
-    margin: 0 1.625rem;
-    padding-bottom: 2rem;
+
+    margin: 1rem 1.625rem;
     border-radius: 8px;
     border: solid 1px var(--purple);
 
@@ -31,10 +41,23 @@
     background: var(--purple-light);
     border: 0.5px solid var(--purple);
     cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 .iconPlusOpen{
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
     display: block;
+}
+.iconClose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:2.5rem; 
+    width:2.5rem; 
+    border-radius: 4px;
+    background: var(--turquoise-dark);
+    border: 0.5px solid var(--turquoise-light);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 
 
@@ -46,5 +69,15 @@
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    
+    transition: ease 1s;
 }
+
+.sectionDisplayClosed{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    overflow: hidden;
+    height: 0px;
+    transition: height 1s;
+}
+

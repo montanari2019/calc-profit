@@ -1,5 +1,9 @@
 import styleResultButtonItem from "./ResultButtonItem.module.css"
 
+interface IResultButtonItemProps {
+    total:number
+}
+
 export function ResultButtonItem(){
     return(
         <div className={styleResultButtonItem.container}>

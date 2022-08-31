@@ -1,53 +1,51 @@
-import { Plus } from "phosphor-react";
-import { useState } from "react";
-import { InputProfitItem } from "../inputProfitItem/InputProfitItem";
-import { ResultButtonItem } from "../resultButtonItem/ResultButtonItem";
+import { ArrowLineDown, ArrowLineUp } from "phosphor-react";
+import { ReactNode } from "react";
 import styleCobrancaProfit from "./CobrancaProfit.module.css";
 
-export function CobrancaProfit() {
-  const [cardOpen, setCardOpen] = useState<Boolean>(false);
+interface ICobrancaProfitProps {
+  children: ReactNode | null;
+  title: string;
+  onOpen: () => void;
+  onClose: () => void;
+  open: boolean;
+}
+
+export function CobrancaProfit({
+  children,
+  title,
+  open,
+  onOpen,
+  onClose,
+}: ICobrancaProfitProps) {
+  // const [cardOpen, setCardOpen] = useState<Boolean>(false);
 
   return (
     <div>
       <div className={styleCobrancaProfit.cardBody}>
-        <section className={styleCobrancaProfit.cardOpen}>
+        <section className={open ? styleCobrancaProfit.cardOpen: styleCobrancaProfit.cardClose}>
           <section className={styleCobrancaProfit.ajustButtonCard}>
-            <div className={styleCobrancaProfit.iconOpen}>
-              <Plus
-                color="#E1E1E6"
-                size={27}
-                className={styleCobrancaProfit.iconPlusOpen}
-              />
+            <div onClick={open ? onClose : onOpen} className={open ? styleCobrancaProfit.iconOpen : styleCobrancaProfit.iconClose}>
+              {open ? (
+                <ArrowLineUp
+                  color="#E1E1E6"
+                  size={27}
+                  className={styleCobrancaProfit.iconPlusOpen}
+                />
+              ) : (
+                <ArrowLineDown
+                  color="#E1E1E6"
+                  size={27}
+                  className={styleCobrancaProfit.iconPlusOpen}
+                />
+              )}
             </div>
 
-            <strong className={styleCobrancaProfit.strong}>
-              Cobrança Bancária
-            </strong>
+            <strong className={styleCobrancaProfit.strong}>{title}</strong>
           </section>
         </section>
 
-        <section className={styleCobrancaProfit.sectionDisplay}>
-          <div>
-            <InputProfitItem
-              labelName={"Ikaro"}
-              inputType={"text"}
-              placeholderName={"teste"}
-            />
-            <InputProfitItem
-              labelName={"Kaiury"}
-              inputType={"password"}
-              placeholderName={"teste"}
-            />
-            <InputProfitItem
-              labelName={"Adam"}
-              inputType={"email"}
-              placeholderName={"teste"}
-            />
-          </div>
-
-          <div>
-            <ResultButtonItem/>
-          </div>
+        <section className={open ? styleCobrancaProfit.sectionDisplay : styleCobrancaProfit.sectionDisplayClosed}>
+          {children}
         </section>
       </div>
     </div>
