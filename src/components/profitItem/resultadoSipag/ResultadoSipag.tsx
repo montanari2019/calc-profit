@@ -3,9 +3,9 @@ import { CardProfit } from "../cardProft/CardProfit";
 import { InputProfitItem } from "../inputProfitItem/InputProfitItem";
 import { ResultButtonItem } from "../resultButtonItem/ResultButtonItem";
 
-export function Rdc721() {
+export function ResultadoSipag() {
   const [open, setOpen] = useState(false);
-    return <CardProfit open={open} onOpen={() => {setOpen(true)}} onClose={() => {setOpen(false)}} title="RDC 721">
+    return <CardProfit open={open} onOpen={() => {setOpen(true)}} onClose={() => {setOpen(false)}} title="Resultado Sipag">
         <div>
             <InputProfitItem
               labelName="Teste"

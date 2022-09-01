@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { CobrancaProfit } from "../cobrancaBancaria/CobrancaProfit";
+import { CardProfit } from "../cardProft/CardProfit";
 import { InputProfitItem } from "../inputProfitItem/InputProfitItem";
 import { ResultButtonItem } from "../resultButtonItem/ResultButtonItem";
 
 export function SaldoMedioContaCorrente() {
     const [open, setOpen] = useState(false);
-    return <CobrancaProfit open={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)} title="Saldo médio da conta corrente">
+    return <CardProfit open={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)} title="Saldo médio da conta corrente">
         <div>
             <InputProfitItem
               labelName={"Ikaro"}
@@ -27,5 +27,5 @@ export function SaldoMedioContaCorrente() {
           <div>
             <ResultButtonItem />
           </div>
-    </CobrancaProfit>
+    </CardProfit>
 }

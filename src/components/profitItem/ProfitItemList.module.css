@@ -1,19 +1,29 @@
 .container {
     padding: 2.93rem 0;
     background: var(--gray-600);
+}
+
+.display{
     display: flex;
-    gap: 10%;
-    justify-content: space-around;
+    gap: 20%;
+    justify-content: space-between;
     flex-direction: column;
+}
+
+.sectionOne{
+    width: 100%;
+    text-align:center;
+    border-top: 1px solid var(--gray-700);
+    margin: 4.6875rem 0;
 
 }
 
 @media(min-width: 1025px){
     .container{
         padding: 2.93rem 15%;
+    }
+    .display{
         flex-direction: row;
         flex-wrap: wrap;
-        
-        
     }
 }

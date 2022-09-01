@@ -1,6 +1,6 @@
-import { ArrowLineDown, ArrowLineUp } from "phosphor-react";
+import { CaretDown, CaretUp } from "phosphor-react";
 import { ReactNode } from "react";
-import styleCobrancaProfit from "./CobrancaProfit.module.css";
+import styleCobrancaProfit from "./CardProfit.module.css";
 
 interface ICobrancaProfitProps {
   children: ReactNode | null;
@@ -10,14 +10,14 @@ interface ICobrancaProfitProps {
   open: boolean;
 }
 
-export function CobrancaProfit({
+export function CardProfit({
   children,
   title,
   open,
   onOpen,
   onClose,
 }: ICobrancaProfitProps) {
-  // const [cardOpen, setCardOpen] = useState<Boolean>(false);
+
 
   return (
     <div>
@@ -26,13 +26,13 @@ export function CobrancaProfit({
           <section className={styleCobrancaProfit.ajustButtonCard}>
             <div onClick={open ? onClose : onOpen} className={open ? styleCobrancaProfit.iconOpen : styleCobrancaProfit.iconClose}>
               {open ? (
-                <ArrowLineUp
+                <CaretUp
                   color="#E1E1E6"
                   size={27}
                   className={styleCobrancaProfit.iconPlusOpen}
                 />
               ) : (
-                <ArrowLineDown
+                <CaretDown
                   color="#E1E1E6"
                   size={27}
                   className={styleCobrancaProfit.iconPlusOpen}

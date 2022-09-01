@@ -1,0 +1,84 @@
+.container {
+    background: #fff;
+    color: var(--dark-green);
+    padding: 1rem 1.6875rem;
+    border-radius: 25px;
+    margin-top: -3rem;
+}
+
+.tableTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.tableLine{
+    padding: 1rem 0;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.tableLine:hover{
+    background: var(--purple);
+    color: var(--gray-100);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.4s;
+}
+
+.cardResult{
+    margin: 2.5rem 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    color: var(--gray-100);
+    background: var(--turquoise-light);
+    border: solid 1px var(--turquoise-dark);
+}
+
+.cardResult:hover{
+    background: var(--purple-light);
+    border: solid 1px var(--purple);
+    transition: background-color 0.4s;
+}
+
+
+
+.printOut{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    color: var(--purple-light);
+    border: solid 1px var(--purple-light);
+    border-radius: 8px;
+    background: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 0 5rem 0;
+
+}
+.printOutIcon{
+    padding-right: 10px;
+}
+
+.printOut:hover{
+    background: var(--purple-light);
+    border-color: var(--purple);
+    color: var(--gray-100);
+    transition: background-color 0.4s;
+}
+
+@media(min-width: 1025px){
+    .container{
+        padding: 2.93rem 15%;
+    }
+    .printOut{
+        width: 20%;
+    }
+}
