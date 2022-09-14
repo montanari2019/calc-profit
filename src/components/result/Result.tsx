@@ -10,32 +10,32 @@ const resultItemList = [
   {
     id: 2,
     title: "Fundo Reserva (10%) - Destinação Legal",
-    value: 9286942.86,
+    value: 14371668.72,
   },
   {
     id: 3,
     title: "FATES (5,0%) - Destinação Legal",
-    value: 9286942.86,
+    value: 7185834.36,
   },
   {
     id: 4,
     title: "FATES - Atos com não associados",
-    value: 9286942.86,
+    value: 4250988.68,
   },
   {
     id: 5,
     title: "FEF - (5,0%)",
-    value: 9286942.86,
+    value: 7185834.36,
   },
   {
     id: 6,
     title: "Adicional Fundo Reserva",
-    value: 9286942.86,
+    value: 43145253.96,
   },
   {
     id: 7,
     title: "Ação Social (Hospital Cooperar)",
-    value: 9286942.86,
+    value: 10000000.00,
   },
 ];
 

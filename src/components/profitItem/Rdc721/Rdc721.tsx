@@ -5,17 +5,34 @@ import { ResultButtonItem } from "../resultButtonItem/ResultButtonItem";
 
 export function Rdc721() {
   const [open, setOpen] = useState(false);
-    return <CardProfit open={open} onOpen={() => {setOpen(true)}} onClose={() => {setOpen(false)}} title="RDC 721">
-        <div>
-            <InputProfitItem
-              labelName="Teste"
-              inputType="Teste"
-              placeholderName={"teste"}
-            />
-          </div>
+  const [receitaCoop, setReceitaCoop] = useState<number>(0);
 
-          <div>
-            <ResultButtonItem />
-          </div>
+  function valueOutput(valueInput: string) {
+    console.log(valueInput);
+  }
+  return (
+    <CardProfit
+      open={open}
+      onOpen={() => {
+        setOpen(true);
+      }}
+      onClose={() => {
+        setOpen(false);
+      }}
+      title="RDC 721"
+    >
+      <div>
+        <InputProfitItem
+          labelName="Teste"
+          inputType="Teste"
+          placeholderName={"teste"}
+          inputValueProps={valueOutput}
+        />
+      </div>
+
+      <div>
+        <ResultButtonItem totalizer={receitaCoop} />
+      </div>
     </CardProfit>
+  );
 }

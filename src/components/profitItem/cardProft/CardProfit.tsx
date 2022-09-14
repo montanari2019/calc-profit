@@ -21,7 +21,7 @@ export function CardProfit({
 
   return (
     <div>
-      <div className={styleCobrancaProfit.cardBody}>
+      <div  className={styleCobrancaProfit.cardBody}>
         <section className={open ? styleCobrancaProfit.cardOpen: styleCobrancaProfit.cardClose}>
           <section className={styleCobrancaProfit.ajustButtonCard}>
             <div onClick={open ? onClose : onOpen} className={open ? styleCobrancaProfit.iconOpen : styleCobrancaProfit.iconClose}>

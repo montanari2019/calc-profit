@@ -1,15 +1,17 @@
 import styleResultButtonItem from "./ResultButtonItem.module.css"
 
 interface IResultButtonItemProps {
-    total:number
+    totalizer:number
 }
 
-export function ResultButtonItem(){
+export function ResultButtonItem( { totalizer }: IResultButtonItemProps){
+
+    const valueConverted = totalizer.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
     return(
         <div className={styleResultButtonItem.container}>
             <strong>Valor projetado a ser devolvido</strong>
             <div className={styleResultButtonItem.result}>
-                <strong>182.658,30</strong>
+                <strong>{valueConverted}</strong>
             </div>
 
             <div className={styleResultButtonItem.buttonDisplay}>
