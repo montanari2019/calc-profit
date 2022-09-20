@@ -52,12 +52,24 @@ strong {
 }
 
 
-.buttonDeleteResult{
+.buttonLimparResult{
     padding: 0 1rem;
     height: 2.31rem;
     font-size: 0.75rem;
-    background: var(--red-danger);
-    color: var(--gray-100);
+    background: var(--yellow);
+    color: var(--gray-600);
     border-radius: 5px;
-    border: none
+    border: solid 1px var(--yellow);
+}
+
+.buttonLimparResult:hover{
+    padding: 0 1rem;
+    height: 2.31rem;
+    font-size: 0.75rem;
+    background: var(--gray-500);
+    border: solid 1px var(--yellow);
+    color: var(--yellow);
+    border-radius: 5px;
+    transition: background-color 0.2s; 
+   
 }

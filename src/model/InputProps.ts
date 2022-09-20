@@ -3,4 +3,5 @@ export interface InputProps{
     inputType: string;
     placeholderName: string;
     inputValueProps: ( value: string) => void;
+    handleInputCleanValue: ( value: string ) => void;
 }

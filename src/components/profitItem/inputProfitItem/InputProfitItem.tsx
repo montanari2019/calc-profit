@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react"
 import { InputProps } from "../../../model/InputProps"
 import styleInput from "./InputProfitItem.module.css"
 
-export function InputProfitItem({ labelName, inputType, placeholderName, inputValueProps}: InputProps){
+export function InputProfitItem({ labelName, inputType, placeholderName, inputValueProps, handleInputCleanValue}: InputProps){
 
     const [inputValue, setInputValue] = useState("")
 
@@ -11,6 +11,8 @@ export function InputProfitItem({ labelName, inputType, placeholderName, inputVa
         setInputValue(event.target.value.toLocaleString())
         inputValueProps(inputValue)
     }
+
+   
 
     return(
         <div className={styleInput.container}>

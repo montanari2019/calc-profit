@@ -6,9 +6,14 @@ import { ResultButtonItem } from "../resultButtonItem/ResultButtonItem";
 export function Rdc721() {
   const [open, setOpen] = useState(false);
   const [receitaCoop, setReceitaCoop] = useState<number>(0);
+  const [resultCalCob, setResultCalCob] = useState<number>(0);
 
   function valueOutput(valueInput: string) {
     console.log(valueInput);
+  }
+
+  function handleClearFieldValue(totalizer: number) {
+    setResultCalCob(totalizer);
   }
   return (
     <CardProfit
@@ -21,17 +26,20 @@ export function Rdc721() {
       }}
       title="RDC 721"
     >
-      <div>
+      {/* <div>
         <InputProfitItem
           labelName="Teste"
           inputType="Teste"
           placeholderName={"teste"}
           inputValueProps={valueOutput}
         />
-      </div>
+      </div> */}
 
       <div>
-        <ResultButtonItem totalizer={receitaCoop} />
+        <ResultButtonItem
+          totalizer={receitaCoop}
+          handleClearFieldProps={handleClearFieldValue}
+        />
       </div>
     </CardProfit>
   );

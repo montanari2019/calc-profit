@@ -9,6 +9,7 @@ import { ResultButtonItem } from "../resultButtonItem/ResultButtonItem";
 export function DevolucaoAnuiadadeCartao() {
   const [open, setOpen] = useState(false);
   const [receitaCoop, setReceitaCoop] = useState<number>(0);
+  const [resultCalCob, setResultCalCob] = useState<number>(0);
 
   function valueOutput (valueInput: string){
     
@@ -16,10 +17,14 @@ export function DevolucaoAnuiadadeCartao() {
     console.log(valueInput)
     
   }
+
+  function handleClearFieldValue( totalizer: number){
+    setResultCalCob(totalizer)
+}
   
     return <CardProfit open={open} onOpen={() => {setOpen(true)}} onClose={() => {setOpen(false)}} title="Devolução Anuiadade Cartão">
         <div>
-            <InputProfitItem
+            {/* <InputProfitItem
               labelName="Teste"
               inputType="Teste"
               placeholderName={"teste"}
@@ -30,7 +35,8 @@ export function DevolucaoAnuiadadeCartao() {
           <div>
             <ResultButtonItem 
               totalizer={receitaCoop}
-            />
+              handleClearFieldProps={handleClearFieldValue}
+            /> */}
           </div>
     </CardProfit>
 }

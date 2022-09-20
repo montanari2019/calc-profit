@@ -6,9 +6,16 @@ import { ResultButtonItem } from "../resultButtonItem/ResultButtonItem";
 export function SaldoMedioContaCorrente() {
   const [open, setOpen] = useState(false);
   const [receitaCoop, setReceitaCoop] = useState<number>(0);
+  const [resultCalCob, setResultCalCob] = useState<number>(0);
+
   function valueOutput(valueInput: string) {
     console.log(valueInput);
   }
+
+  function handleClearFieldValue(totalizer: number) {
+    setResultCalCob(totalizer);
+  }
+
   return (
     <CardProfit
       open={open}
@@ -16,7 +23,7 @@ export function SaldoMedioContaCorrente() {
       onClose={() => setOpen(false)}
       title="Saldo médio da conta corrente"
     >
-      <div>
+      {/* <div>
         <InputProfitItem
           labelName={"Ikaro"}
           inputType={"text"}
@@ -35,10 +42,13 @@ export function SaldoMedioContaCorrente() {
           placeholderName={"teste dois"}
           inputValueProps={valueOutput}
         />
-      </div>
+      </div> */}
 
       <div>
-        <ResultButtonItem totalizer={receitaCoop} />
+        <ResultButtonItem
+          totalizer={resultCalCob}
+          handleClearFieldProps={handleClearFieldValue}
+        />
       </div>
     </CardProfit>
   );
